@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturnacy's World</title>
+    <link rel="stylesheet" href="saturnianstyle.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<header>
+    <h1>Saturnacy's World</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div id="message">█████████████████</div>
+
+<div class="section-wrapper">
+    <div class="section-title">About Me</div>
+    <div class="section-line"></div>
+
+    <div class="text-box">
+        I am João Pedro Pessôa Primo, but online, you probably know me as <strong>Saturnacy</strong>. Welcome to my webpage — I hope you enjoy your stay!<br><br>
+        Ever since I was a kid, I've been fascinated by computers and their ability to create entire worlds and universes. That curiosity quickly turned into a passion for the science and development behind these incredible machines. Today, I'm pursuing a Computer Science degree at <strong>CESAR School</strong>, turning that passion into a career.
+    </div>
+</div>
+
+<div class="section-wrapper">
+    <div class="section-title">Interests</div>
+    <div class="section-line"></div>
+
+    <div class="text-box">
+        I absolutely love video games — they've shaped who I am in more ways than I can describe. My mission is to share that love with the world and help others see the beauty in interactive experiences. If I had to choose a favorite, it would be the timeless sandbox of <strong>Minecraft</strong>, a game that never stops inspiring creativity.<br><br>
+        When I'm not coding or gaming, you'll probably find me indulging in my other hobbies: enjoying good food (especially <strong>popcorn</strong>), exploring water parks, diving into historical conversations, or simply observing the wonderful wildlife on this planet.
+    </div>
+</div>
+
+<div class="section-wrapper">
+    <div class="section-title">Fun Fact</div>
+    <div class="section-line"></div>
+
+    <div class="text-box">
+        I'm not actually from Saturn (I just moved there). I was born and raised on <strong>Earth</strong> — specifically in the South American country known as <strong>Brazil</strong>.
+    </div>
+</div>
+
+<footer>© 2025 João Pedro Pessôa Primo. All rights reserved.</footer>
+
+<script>
+    console.log("Snooping around the files as usual, i see?");
+
+    function decryptMessage() {
+        const text = "GREETINGS, USER";
+        const chars = "!<>-_\\/[]{}—=+*^?#_";
+        const messageElement = document.getElementById('message');
+        let decryptIndex = 0;
+
+        function scramble() {
+            let output = "";
+            for (let i = 0; i < text.length; i++) {
+                if (i < decryptIndex) {
+                    output += text[i];
+                } else {
+                    output += chars[Math.floor(Math.random() * chars.length)];
+                }
+            }
+            messageElement.textContent = output;
+            requestAnimationFrame(scramble);
+        }
+
+        function startDecrypt() {
+            const interval = 300;
+
+        function reveal() {
+            if (decryptIndex < text.length) {
+                decryptIndex++;
+                setTimeout(reveal, interval);
+            }
+        }
+
+        reveal();
+    }
+
+    scramble();
+    setTimeout(startDecrypt, 2000);
+    }
+
+    decryptMessage();
+
+    const canvas = document.getElementById('stars');
+    const ctx = canvas.getContext('2d');
+
+    let width, height;
+    let stars = [];
+
+    function resizeCanvas() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function createStars(count) {
+        stars = [];
+        for (let i = 0; i < count; i++) {
+            stars.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                radius: Math.random() * 1.5,
+                speed: Math.random() * 0.5 + 0.2,
+                opacity: Math.random() * 0.7 + 0.3
+            });
+        }
+    }
+
+    createStars(150);
+
+    function animateStars() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let star of stars) {
+            star.y += star.speed;
+            if (star.y > height) {
+                star.y = 0;
+                star.x = Math.random() * width;
+            }
+
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+            ctx.fill();
+        } 
+
+        requestAnimationFrame(animateStars);
+    }
+
+    animateStars();
+</script>
+
+</body>
+</html>
