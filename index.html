@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saturnacy's World</title>
-    <link rel="stylesheet" href="saturnianstyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saturnacy's World</title>
+  <link rel="stylesheet" href="saturnianstyle.css" />
 </head>
 <body>
 
 <canvas id="stars"></canvas>
 
 <header>
-    <h1>Saturnacy's World</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <h1>Saturnacy's World</h1>
+  <nav>
+    <a href="index.html" id="navHome">Home</a>
+    <a href="projects.html" id="navProjects">Projects</a>
+    <a href="contact.html" id="navContact">Contact</a>
+  </nav>
+<div class="language-toggle">
+    <div class="flag-circle">
+      <img src="usflag.png" alt="English" class="flag" />
+    </div>
+
+    <label class="lang-switch">
+      <input type="checkbox" id="langSwitch"/>
+      <span class="lang-slider"></span>
+    </label>
+
+    <div class="flag-circle">
+      <img src="brazilflag.png" alt="Português" class="flag" />
+    </div>
+</div>
 </header>
 
 <div id="message">█████████████████</div>
 
 <div class="section-wrapper">
-    <div class="section-title">About Me</div>
+    <div class="section-title" id="about_title">About Me</div>
     <div class="section-line"></div>
-
-    <div class="text-box">
+    <div class="text-box" id="about_text">
         I am João Pedro Pessôa Primo, but online, you probably know me as <strong>Saturnacy</strong>. Welcome to my webpage — I hope you enjoy your stay!<br><br>
         Ever since I was a kid, I've been fascinated by computers and their ability to create entire worlds and universes. That curiosity quickly turned into a passion for the science and development behind these incredible machines. Today, I'm pursuing a Computer Science degree at <strong>CESAR School</strong>, turning that passion into a career.
     </div>
 </div>
 
 <div class="section-wrapper">
-    <div class="section-title">Interests</div>
+    <div class="section-title" id="interests_title">Interests</div>
     <div class="section-line"></div>
-
-    <div class="text-box">
+    <div class="text-box" id="interests_text">
         I absolutely love video games — they've shaped who I am in more ways than I can describe. My mission is to share that love with the world and help others see the beauty in interactive experiences. If I had to choose a favorite, it would be the timeless sandbox of <strong>Minecraft</strong>, a game that never stops inspiring creativity.<br><br>
         When I'm not coding or gaming, you'll probably find me indulging in my other hobbies: enjoying good food (especially <strong>popcorn</strong>), exploring water parks, diving into historical conversations, or simply observing the wonderful wildlife on this planet.
     </div>
 </div>
 
 <div class="section-wrapper">
-    <div class="section-title">Fun Fact</div>
+    <div class="section-title" id="funfact_title">Fun Fact</div>
     <div class="section-line"></div>
-
-    <div class="text-box">
+    <div class="text-box" id="funfact_text">
         I'm not actually from Saturn (I just moved there). I was born and raised on <strong>Earth</strong> — specifically in the South American country known as <strong>Brazil</strong>.
     </div>
 </div>
