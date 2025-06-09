@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saturnacy's World</title>
-    <link rel="stylesheet" href="saturnianstyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saturnacy's World</title>
+  <link rel="stylesheet" href="saturnianstyle.css"/>
 </head>
+
 <body>
 
 <canvas id="stars"></canvas>
 
 <header>
-    <h1>Saturnacy's World</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <h1 id="title">Saturnacy's World</h1>
+  <nav>
+    <a href="index.html" id="navHome">Home</a>
+    <a href="projects.html" id="navProjects">Projects</a>
+    <a href="contact.html" id="navContact">Contact</a>
+  </nav>
+<div class="language-toggle">
+  <div class="flag-circle">
+    <img src="usflag.png" alt="English" class="flag">
+  </div>
+
+  <label class="lang-switch">
+    <input type="checkbox" id="langSwitch">
+    <span class="lang-slider"></span>
+  </label>
+
+  <div class="flag-circle">
+    <img src="brazilflag.png" alt="Português" class="flag">
+  </div>
+</div>
 </header>
 
 <div id="message">█████████████████</div>
 
 <div class="section-wrapper">
-    <div class="section-subtitle">Want to see more of my work? Feel free to explore my socials through the links below:</div>
-    <div class="section-line"></div>
+  <div id="subtitle" class="section-subtitle">
+    Want to see more of my work? Feel free to explore my socials through the links below:
+  </div>
+  <div class="section-line"></div>
 </div>
 
 <div class="contact-grid">
-    <a href="https://github.com/Saturnacy" target="_blank" class="contact-link">
-        <img src="githublogo.png" alt="GitHub">
-    </a>
-    <a href="https://www.linkedin.com/in/joaopedropessoaprimo/" target="_blank" class="contact-link">
-        <img src="linkedinlogo.png" alt="LinkedIn">
-    </a>
+  <a href="https://github.com/Saturnacy" target="_blank" class="contact-link">
+    <img src="githublogo.png" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/joaopedropessoaprimo/" target="_blank" class="contact-link">
+    <img src="linkedinlogo.png" alt="LinkedIn">
+  </a>
 </div>
 
-<footer>© 2025 João Pedro Pessôa Primo. All rights reserved.</footer>
+<footer id="footer">© 2025 João Pedro Pessôa Primo. All rights reserved.</footer>
 
 <script src="contactscript.js"></script>
 
