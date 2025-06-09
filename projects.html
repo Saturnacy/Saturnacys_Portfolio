@@ -13,16 +13,30 @@
 <header>
     <h1>Saturnacy's World</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" id="navHome">Home</a>
+        <a href="projects.html" id="navProjects">Projects</a>
+        <a href="contact.html" id="navContact">Contact</a>
     </nav>
+<div class="language-toggle">
+    <div class="flag-circle">
+        <img src="usflag.png" alt="English" class="flag" />
+    </div>
+
+    <label class="lang-switch">
+        <input type="checkbox" id="langSwitch"/>
+        <span class="lang-slider"></span>
+    </label>
+
+    <div class="flag-circle">
+        <img src="brazilflag.png" alt="Português" class="flag" />
+    </div>
+</div>
 </header>
 
 <div id="message">█████████████████</div>
 
 <div class="section-wrapper">
-    <div class="section-subtitle">Check out some of the projects I've developed or contributed to over time!</div>
+    <div class="section-subtitle" id="subtitle">Check out some of the projects I've developed or contributed to over time!</div>
     <div class="section-line"></div>
 </div>
 
@@ -38,7 +52,7 @@
             </div>
             <div class="project-content">
                 <div class="project-title">Vida Pet</div>
-                <div class="project-description">
+                <div class="project-description" id="vp_description">
                     <em>Vida Pet</em> is a comprehensive, Portuguese quality-of-life program designed to assist pet owners in effectively managing the well-being of their animals.
                     <br><br>
                     The platform offers a variety of tools, including pet data, vaccination calendar and health objectives registration, and tailored recommendations for toys, physical activities, and nutrition — customized according to the pet's age and species.
@@ -56,7 +70,7 @@
             </div>
             <div class="project-content">
                 <div class="project-title">The Legend of Erick</div>
-                <div class="project-description">
+                <div class="project-description" id="tloe_description">
                     <em>The Legend of Erick</em> is a short 2D puzzle game created in Bitsy, designed for retro gaming enthusiasts. You play as a young knight on a quest to defeat a powerful demon lurking in a vast, mysterious castle.
                     <br><br>Inspired by classic 1980s puzzle-adventure titles like <em>The Legend of Zelda</em>, the game features three carefully crafted puzzles, hidden secrets, and a dynamic final boss that can lead to multiple endings — depending on the choices you make.
                     <br><br>If you're a fan of old-school gameplay and want to see how far Bitsy can be pushed, <em>The Legend of Erick</em> is a bite-sized but memorable adventure worth exploring!
@@ -72,7 +86,7 @@
             </div>
             <div class="project-content">
                 <div class="project-title">Recife de Memórias</div>
-                <div class="project-description">
+                <div class="project-description" id="rdm_description">
                     <em>Recife de Memórias</em> is an interactive project developed in Python and Arduino that combines physical and digital elements to help elderly players, especially those with dementia or Alzheimer's, reconnect with the history of Recife Antigo. 
                     <br><br>
                     Through sensory-rich cues, like sounds and a map of the island, players recall five cultural landmarks by listening to brief descriptions and selecting the matching colored buttons, then repeating the sequence to stimulate memory and attention.
