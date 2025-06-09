@@ -58,6 +58,82 @@ header nav a:hover {
     text-shadow: 0 0 5px #00ff88;
 }
 
+.language-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.flag-circle {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px var(--primary-color);
+    background-color: black;
+}
+
+.flag-circle img.flag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.lang-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+}
+
+.lang-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.lang-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--nav-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 34px;
+    transition: background-color 0.3s;
+}
+
+.lang-slider::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    top: 2px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--primary-color);
+    transition: transform 0.3s;
+}
+
+.lang-switch input:checked + .lang-slider {
+    background-color: #003300;
+}
+
+.lang-switch input:checked + .lang-slider::before {
+    transform: translateX(20px);
+}
+
 #message {
     background: rgba(0, 0, 0);
     padding: 10px 40px;
