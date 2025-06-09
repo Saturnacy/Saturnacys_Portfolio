@@ -50,6 +50,7 @@ header nav a {
     text-decoration: none;
     margin: 0 20px;
     font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 header nav a:hover {
