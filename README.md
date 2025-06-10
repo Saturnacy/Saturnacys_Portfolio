@@ -1,4 +1,4 @@
-# Saturnacy's Portfolio
+# João Pedro Pessôa Primo’s (Saturnacy) Portfolio
 
 Hello and welcome to my portfolio!
 <br>
