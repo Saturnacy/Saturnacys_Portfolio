@@ -13,7 +13,8 @@ const translations = {
     interests_text: `I absolutely love video games — they've shaped who I am in more ways than I can describe. My mission is to share that love with the world and help others see the beauty in interactive experiences. If I had to choose a favorite, it would be the timeless sandbox of <strong>Minecraft</strong>, a game that never stops inspiring creativity.<br><br>
     When I'm not coding or gaming, you'll probably find me indulging in my other hobbies: enjoying good food (especially <strong>popcorn</strong>), exploring water parks, diving into historical conversations, or simply observing the wonderful wildlife on this planet.`,
     funfact_title: "Fun Fact",
-    funfact_text: `I'm not actually from Saturn (I just moved there). I was born and raised on <strong>Earth</strong> — specifically in the South American country known as <strong>Brazil</strong>.`
+    funfact_text: `I'm not actually from Saturn (I just moved there). I was born and raised on <strong>Earth</strong> — specifically in the South American country known as <strong>Brazil</strong>.`,
+    footer: "© 2025 João Pedro Pessôa Primo. All rights reserved."
   },
   pt: {
     message: "SAUDAÇÕES, USUÁRIO",
@@ -27,7 +28,8 @@ const translations = {
     interests_text: `Eu sou absolutamente apaixonado por videogames — eles moldaram quem eu sou de maneiras que mal consigo descrever. Minha missão é compartilhar esse amor com o mundo e ajudar outras pessoas a enxergar a beleza das experiências interativas. Se eu tivesse que escolher um favorito, seria o atemporal sandbox <strong>Minecraft</strong>, um jogo que nunca deixa de inspirar criatividade.<br><br>
     Quando não estou programando ou jogando, você provavelmente vai me encontrar curtindo outros hobbies: apreciando uma boa comida (especialmente <strong>pipoca</strong>), explorando parques aquáticos, mergulhando em conversas sobre história ou simplesmente observando a maravilhosa vida selvagem deste planeta.`,
     funfact_title: "Curiosidade",
-    funfact_text: `Na verdade, eu não sou de Saturno (me mudei pra lá recentemente). Eu nasci e cresci na <strong>Terra</strong> — mais especificamente no país sul-americano conhecido como <strong>Brasil</strong>.`
+    funfact_text: `Na verdade, eu não sou de Saturno (me mudei pra lá recentemente). Eu nasci e cresci na <strong>Terra</strong> — mais especificamente no país sul-americano conhecido como <strong>Brasil</strong>.`,
+    footer: "© 2025 João Pedro Pessôa Primo. Todos os direitos reservados."
   }
 };
 
