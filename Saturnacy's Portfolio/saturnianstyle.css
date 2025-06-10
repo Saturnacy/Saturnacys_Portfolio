@@ -166,14 +166,18 @@ header nav a:hover {
 
 .section-title {
     margin-top: 100px;
+    margin-bottom: 0px;
     font-size: 3rem;
+    font-weight: normal;
     text-shadow: 0 0 8px var(--primary-color);
     text-align: center;
 }
 
 .section-subtitle {
     margin-top: 100px;
+    margin-bottom: 0;
     font-size: 2rem;
+    font-weight: normal;
     text-shadow: 0 0 8px var(--primary-color);
     text-align: center;
 }
