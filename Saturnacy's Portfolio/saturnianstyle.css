@@ -248,6 +248,7 @@ header nav a:hover {
     font-size: 1.8rem;
     font-weight: bold;
     text-shadow: 0 0 33px var(--primary-color);
+    margin: 0; 
     margin-bottom: 10px;
 }
 
@@ -280,6 +281,18 @@ header nav a:hover {
     max-width: 700px;
     margin: 40px 0;
     position: relative;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
 }
 
 .slider-wrapper {
