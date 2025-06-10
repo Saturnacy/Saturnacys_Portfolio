@@ -20,7 +20,9 @@ const translations = {
     <br><br>
     Through sensory-rich cues, like sounds and a map of the island, players recall five cultural landmarks by listening to brief descriptions and selecting the matching colored buttons, then repeating the sequence to stimulate memory and attention.
     <br><br>
-    <em>Recife de Memórias</em> is a meaningful blend of cognitive stimulation and cultural storytelling — a journey through memory worth taking!`
+    <em>Recife de Memórias</em> is a meaningful blend of cognitive stimulation and cultural storytelling — a journey through memory worth taking!`,
+    
+    footer: "© 2025 João Pedro Pessôa Primo. All rights reserved."
   },
   pt: {
     message: "PROJETOS",
@@ -41,7 +43,9 @@ const translations = {
     <br><br>
     Por meio de estímulos sensoriais, como sons e um mapa da ilha, os jogadores relembram cinco pontos culturais ao ouvir breves descrições e selecionar os botões coloridos correspondentes, repetindo depois a sequência como forma de estimular a memória e a atenção.
     <br><br>
-    <em>Recife de Memórias</em> é uma combinação significativa de estímulo cognitivo e narrativa cultural — uma viagem pela memória que vale a pena ser vivida!`
+    <em>Recife de Memórias</em> é uma combinação significativa de estímulo cognitivo e narrativa cultural — uma viagem pela memória que vale a pena ser vivida!`,
+    
+    footer: "© 2025 João Pedro Pessôa Primo. Todos os direitos reservados."
   }
 };
 
